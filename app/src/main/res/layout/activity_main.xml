@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.viewmodel.admin.main.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_book"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_buku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_book"/>
+
+</FrameLayout>

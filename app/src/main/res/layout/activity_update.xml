@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.viewmodel.admin.update.UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/edt_username_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/edt_password_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_admin" />
+
+        <EditText
+            android:id="@+id/edt_nama_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_telp_admin" />
+
+        <EditText
+            android:id="@+id/edt_telp_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="numberDecimal"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat_admin" />
+
+        <EditText
+            android:id="@+id/edt_alamat_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_update"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

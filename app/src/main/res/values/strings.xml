@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TryAdmin2</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="nama_admin">Nama</string>
+    <string name="no_telp_admin">No Telp</string>
+    <string name="alamat_admin">Alamat</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="or">Or</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="update">Update</string>
+    <string name="judul_buku">Judul Buku</string>
+    <string name="penulis_buku">Penulis Buku</string>
+    <string name="penerbit_buku">Penerbit Buku</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="jumlah_halaman">Jumlah Halaman</string>
+    <string name="stok_buku">Stok Buku</string>
+    <string name="cover_buku">Cover Buku</string>
+    <string name="deskripsi_buku">Deskripsi Buku</string>
+    <string name="save">Save</string>
+    <string name="select_image">Select Image</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="delete">Delete</string>
+    <string name="detail_penulis_buku">Penulis:</string>
+    <string name="detail_penerbit_buku">Penerbit:</string>
+    <string name="detail_tahun_terbit">Tahun:</string>
+    <string name="detail_jumlah_halaman">Jumlah Halaman:</string>
+    <string name="detail_stok_buku">Stok:</string>
+    <string name="login_berhasil">Login Berhasil</string>
+    <string name="login_gagal">Login Gagal</string>
+    <string name="masih_kosong">Masih Kosong</string>
+    <string name="data_berhasil_disimpan">Data Berhasil Disimpan</string>
+</resources>

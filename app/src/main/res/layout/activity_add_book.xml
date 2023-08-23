@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".view.viewmodel.book.add.AddBookActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/judul_buku" />
+
+            <EditText
+                android:id="@+id/edt_judul_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/penulis_buku" />
+
+            <EditText
+                android:id="@+id/edt_penulis_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/penerbit_buku" />
+
+            <EditText
+                android:id="@+id/edt_penerbit_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tahun_terbit" />
+
+            <EditText
+                android:id="@+id/edt_tahun_terbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_halaman" />
+
+            <EditText
+                android:id="@+id/edt_jumlah_halamam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stok_buku" />
+
+            <EditText
+                android:id="@+id/edt_stok_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cover_buku" />
+
+            <EditText
+                android:id="@+id/edt_cover_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deskripsi_buku" />
+
+            <EditText
+                android:id="@+id/edt_deskripsi_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <include
+                android:id="@+id/layout_upload_image"
+                layout="@layout/item_upload_image" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_add_book"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

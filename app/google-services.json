@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "343755310684",
+    "project_id": "tryadmin2",
+    "storage_bucket": "tryadmin2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343755310684:android:84d5d34ebc45f33f414899",
+        "android_client_info": {
+          "package_name": "com.example.tryadmin2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343755310684-ck31ne9o1rvlu6ndb27mvkgkrfm5tevf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrPh2LyDqYOz4i2WNOul8C-sDLukgssIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343755310684-ck31ne9o1rvlu6ndb27mvkgkrfm5tevf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
