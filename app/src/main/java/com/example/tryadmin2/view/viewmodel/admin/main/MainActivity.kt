@@ -1,6 +1,5 @@
 package com.example.tryadmin2.view.viewmodel.admin.main
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -89,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                         initRecyclerview()
                         Toast.makeText(
                             this@MainActivity,
-                            "Data Berhasil Dihapus",
+                            getString(R.string.data_berhasil_dihapus),
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -102,9 +101,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerview() {
-        binding.rvBuku.layoutManager = LinearLayoutManager(this)
-        recyclerAdapter = BookAdapter(BookAdapterListener())
-        binding.rvBuku.adapter = recyclerAdapter
+        binding.apply {
+            rvBuku.layoutManager = LinearLayoutManager(this@MainActivity)
+            recyclerAdapter = BookAdapter(BookAdapterListener())
+            rvBuku.adapter = recyclerAdapter
+        }
     }
 
     private fun showLoading() {

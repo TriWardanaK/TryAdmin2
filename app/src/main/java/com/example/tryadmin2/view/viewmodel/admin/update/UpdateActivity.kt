@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
+import com.example.tryadmin2.R
 import com.example.tryadmin2.databinding.ActivityUpdateBinding
 import com.example.tryadmin2.util.RequestState
 import dagger.hilt.android.AndroidEntryPoint
@@ -66,19 +67,19 @@ class UpdateActivity : AppCompatActivity() {
             val alamatAdmin = edtAlamatAdmin.text.toString()
             when {
                 usernameAdmin.isEmpty() -> {
-                    edtUsernameAdmin.error = "Masih Kosong"
+                    edtUsernameAdmin.error = getString(R.string.masih_kosong)
                 }
                 passwordAdmin.isEmpty() -> {
-                    edtPasswordAdmin.error = "Masih Kosong"
+                    edtPasswordAdmin.error = getString(R.string.masih_kosong)
                 }
                 namaAdmin.isEmpty() -> {
-                    edtNamaAdmin.error = "Masih Kosong"
+                    edtNamaAdmin.error = getString(R.string.masih_kosong)
                 }
                 telpAdmin.isEmpty() -> {
-                    edtTelpAdmin.error = "Masih Kosong"
+                    edtTelpAdmin.error = getString(R.string.masih_kosong)
                 }
                 alamatAdmin.isEmpty() -> {
-                    edtAlamatAdmin.error = "Masih Kosong"
+                    edtAlamatAdmin.error = getString(R.string.masih_kosong)
                 }
                 else -> {
                     viewModel.putAdmin(
@@ -102,7 +103,7 @@ class UpdateActivity : AppCompatActivity() {
                     hideLoading()
                     Toast.makeText(
                         this@UpdateActivity,
-                        "Data Berhasil Diupdate",
+                        getString(R.string.data_berhasil_diupdate),
                         Toast.LENGTH_SHORT
                     ).show()
                 }

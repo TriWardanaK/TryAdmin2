@@ -8,6 +8,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tryadmin2.R
 import com.example.tryadmin2.databinding.ActivityUpdateBookBinding
 import com.example.tryadmin2.databinding.ItemUploadImageBinding
 import com.example.tryadmin2.util.RequestState
@@ -81,7 +82,7 @@ class UpdateBookActivity : AppCompatActivity() {
                         hideLoading()
                         Toast.makeText(
                             this@UpdateBookActivity,
-                            "Data Berhasil Diupload",
+                            getString(R.string.data_berhasil_diupload),
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -140,28 +141,28 @@ class UpdateBookActivity : AppCompatActivity() {
             val deskripsiBuku = edtDeskripsiBuku.text.toString()
             when {
                 judulBuku.isEmpty() -> {
-                    edtJudulBuku.error = "Masih kosong"
+                    edtJudulBuku.error = getString(R.string.masih_kosong)
                 }
                 penulisBuku.isEmpty() -> {
-                    edtPenulisBuku.error = "Masih kosong"
+                    edtPenulisBuku.error = getString(R.string.masih_kosong)
                 }
                 penerbitBuku.isEmpty() -> {
-                    edtPenerbitBuku.error = "Masih kosong"
+                    edtPenerbitBuku.error = getString(R.string.masih_kosong)
                 }
                 tahunTerbit.isEmpty() -> {
-                    edtTahunTerbit.error = "Masih kosong"
+                    edtTahunTerbit.error = getString(R.string.masih_kosong)
                 }
                 jumlahHalaman.isEmpty() -> {
-                    edtJumlahHalamam.error = "Masih kosong"
+                    edtJumlahHalamam.error = getString(R.string.masih_kosong)
                 }
                 stokBuku.isEmpty() -> {
-                    edtStokBuku.error = "Masih kosong"
+                    edtStokBuku.error = getString(R.string.masih_kosong)
                 }
                 coverBuku.isEmpty() -> {
-                    edtCoverBuku.error = "Masih kosong"
+                    edtCoverBuku.error = getString(R.string.masih_kosong)
                 }
                 deskripsiBuku.isEmpty() -> {
-                    edtDeskripsiBuku.error = "Masih kosong"
+                    edtDeskripsiBuku.error = getString(R.string.masih_kosong)
                 }
                 else -> {
                     viewModel.putBook(
@@ -188,7 +189,7 @@ class UpdateBookActivity : AppCompatActivity() {
                     hideLoading()
                     Toast.makeText(
                         this@UpdateBookActivity,
-                        "Data Berhasil Diupdate",
+                        getString(R.string.data_berhasil_diupdate),
                         Toast.LENGTH_SHORT
                     ).show()
                 }

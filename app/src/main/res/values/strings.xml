@@ -32,4 +32,7 @@
     <string name="login_gagal">Login Gagal</string>
     <string name="masih_kosong">Masih Kosong</string>
     <string name="data_berhasil_disimpan">Data Berhasil Disimpan</string>
+    <string name="data_berhasil_diupdate">Data Berhasil Diupdate</string>
+    <string name="data_berhasil_diupload">Data Berhasil Diupload</string>
+    <string name="data_berhasil_dihapus">Data Berhasil Dihapus</string>
 </resources>
